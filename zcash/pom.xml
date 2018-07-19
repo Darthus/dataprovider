@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>darthus.develop</groupId>
+    <artifactId>darthus-dataprovider-parent</artifactId>
+    <version>0.1.0SNAPSHOT</version>
+  </parent>
+
+  <artifactId>darthus-dataprovider-zcash</artifactId>
+  <packaging>jar</packaging>
+
+  <name></name>
+
+  <properties>
+
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>darthus.develop</groupId>
+      <artifactId>darthus-dataprovider-api</artifactId>
+      <version>0.1.0SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+
+
+  </build>
+
+</project>
