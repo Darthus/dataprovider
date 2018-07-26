@@ -21,6 +21,14 @@
  */
 package darthus.develop.dataprovider.api;
 
+import java.util.List;
+
+import darthus.develop.dataprovider.beans.AddressBean;
+import darthus.develop.dataprovider.beans.FundBean;
+
 public interface CoinDataProvider
 {
+  List<FundBean> getFunds(AddressBean addressBean);
+
+  List<FundBean> getFunds(String address);
 }

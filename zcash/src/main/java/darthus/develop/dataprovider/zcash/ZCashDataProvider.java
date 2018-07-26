@@ -18,13 +18,19 @@
  * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
- *
  */
 package darthus.develop.dataprovider.zcash;
 
-import darthus.develop.dataprovider.api.CoinDataProvider;
+import java.util.List;
+
+import darthus.develop.dataprovider.beans.FundBean;
+import darthus.develop.dataprovider.common.CommonCoinDataProvider;
 
 public class ZCashDataProvider
-  implements CoinDataProvider
+  extends CommonCoinDataProvider
 {
+  public List<FundBean> getFunds(String address)
+  {
+    return null;  //ToDo
+  }
 }

@@ -20,24 +20,6 @@
  */
 package darthus.develop.dataprovider.beans;
 
-public class AddressBean
+public class FundBean
 {
-  private AddressType type;
-  private String address;
-
-  public AddressBean(AddressType type, String address)
-  {
-    this.type = type;
-    this.address = address;
-  }
-
-  public AddressType getType()
-  {
-    return type;
-  }
-
-  public String getAddress()
-  {
-    return address;
-  }
 }

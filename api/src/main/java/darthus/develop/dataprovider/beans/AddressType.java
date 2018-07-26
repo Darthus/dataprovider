@@ -20,24 +20,39 @@
  */
 package darthus.develop.dataprovider.beans;
 
-public class AddressBean
+public abstract class AddressType
 {
-  private AddressType type;
-  private String address;
+  private String type;
 
-  public AddressBean(AddressType type, String address)
+  public AddressType(String type)
   {
     this.type = type;
-    this.address = address;
   }
 
-  public AddressType getType()
+  public String getType()
   {
     return type;
   }
 
-  public String getAddress()
+  @Override
+  public boolean equals(Object o)
   {
-    return address;
+    if(this == o)
+    {
+      return true;
+    }
+    if(o == null || getClass() != o.getClass())
+    {
+      return false;
+    }
+
+    AddressType that = (AddressType) o;
+    return type != null ? type.equals(that.type) : that.type == null;
+  }
+
+  @Override
+  public int hashCode()
+  {
+    return type != null ? type.hashCode() : 0;
   }
 }

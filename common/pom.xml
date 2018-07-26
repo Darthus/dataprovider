@@ -11,7 +11,7 @@
     <version>0.1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>darthus-dataprovider-zcash</artifactId>
+  <artifactId>darthus-dataprovider-common</artifactId>
   <packaging>jar</packaging>
 
   <name></name>
@@ -23,7 +23,7 @@
   <dependencies>
     <dependency>
       <groupId>darthus.develop</groupId>
-      <artifactId>darthus-dataprovider-common</artifactId>
+      <artifactId>darthus-dataprovider-api</artifactId>
       <version>0.1.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>

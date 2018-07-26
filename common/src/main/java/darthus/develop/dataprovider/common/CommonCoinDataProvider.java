@@ -18,26 +18,19 @@
  *  DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  *  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package darthus.develop.dataprovider.beans;
+package darthus.develop.dataprovider.common;
 
-public class AddressBean
+import java.util.List;
+
+import darthus.develop.dataprovider.api.CoinDataProvider;
+import darthus.develop.dataprovider.beans.AddressBean;
+import darthus.develop.dataprovider.beans.FundBean;
+
+public abstract class CommonCoinDataProvider
+  implements CoinDataProvider
 {
-  private AddressType type;
-  private String address;
-
-  public AddressBean(AddressType type, String address)
+  public List<FundBean> getFunds(AddressBean addressBean)
   {
-    this.type = type;
-    this.address = address;
-  }
-
-  public AddressType getType()
-  {
-    return type;
-  }
-
-  public String getAddress()
-  {
-    return address;
+    return getFunds(addressBean.getAddress());
   }
 }
